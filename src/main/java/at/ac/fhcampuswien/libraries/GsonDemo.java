@@ -5,7 +5,9 @@ import com.google.gson.Gson;
 public class GsonDemo {
     public static void main(String[] args) {
         String serializedObject = serialize();
+
         deserializeMovie(serializedObject);
+
     }
 
     /**
@@ -23,7 +25,9 @@ public class GsonDemo {
         int[] myArr = {1, 2, 3, 4};
         gson.toJson(myArr);
 
-        Movie object = new Movie("Reservoir Dogs", 1992);
+        System.out.println(gson.toJson(myArr));
+
+        Movie object = new Movie("Reservoir Dogs");
 
         String serializedObject = gson.toJson(object);
         System.out.println(serializedObject);
@@ -39,7 +43,17 @@ public class GsonDemo {
 
         Movie movie = gson.fromJson(movieJSON, Movie.class);    // deserialize json string to movie object
 
-        System.out.println(movie);
+        Movie movie1 = gson.fromJson("{\"year\":1992, \"title\":\"Reservoir Dogs\"}", Movie.class);
+        System.out.println(movie1); // Reservoir Dogs 1992
+
+        Movie movie2 = gson.fromJson("{\"title\":\"Reservoir Dogs\", \"year\":1992}", Movie.class);
+        System.out.println(movie2);  // Reservoir Dogs 1992
+
+        Movie movie3 = gson.fromJson("{\"title\":\"Reservoir Dogs\"}", Movie.class);
+        System.out.println(movie3);  // Reservoir Dogs 0
+
+        Movie movie4 = gson.fromJson("{\"year\":1992}", Movie.class);
+        System.out.println(movie4);  // null 1992
 
     }
 }
