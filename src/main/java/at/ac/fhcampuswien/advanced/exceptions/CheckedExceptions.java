@@ -19,7 +19,6 @@ public class CheckedExceptions {
             System.out.println(e.getMessage());
         }
 
-
         function1();
         try {
             readFile("mytextfile.txt");
@@ -31,13 +30,6 @@ public class CheckedExceptions {
 
         System.out.println("Continue with program");
     }
-
-
-    public void foo() throws SpecificException1, SpecificException2 {    // correct way
-    }
-
-
-
 
     public static String readFile(String filename) throws FileNotFoundException, IOException {
         FileInputStream fis = new FileInputStream(filename); // may throw a FileNotFoundException
