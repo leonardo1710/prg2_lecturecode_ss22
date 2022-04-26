@@ -16,7 +16,7 @@ Course repository for Programming 2 in Computer Science and Digital Communicatio
 - APIs
 - Libraries and Frameworks
 
-[Lecture Examples]()
+[Lecture Examples](https://github.com/leonardo1710/prg2_lecturecode_ss22/tree/master/src/main/java/at/ac/fhcampuswien/libraries)
 
 [Exercise 2 - Solution](https://github.com/leonardo1710/prg2-exercise-2-solution)
 
@@ -26,7 +26,7 @@ Course repository for Programming 2 in Computer Science and Digital Communicatio
 - Lambda Expressions
 - Streams
 
-[Lecture Examples]()
+[Lecture Examples](https://github.com/leonardo1710/prg2_lecturecode_ss22/tree/master/src/main/java/at/ac/fhcampuswien/advanced)
 
 [Exercise 3 - Solution]()
 
