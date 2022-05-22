@@ -2,16 +2,25 @@ package at.ac.fhcampuswien.advanced.lambdas;
 
 import java.awt.*;
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class App {
+    public static int myFunc(int a, int b, MyOperation op){
+        return op.operation(a, b);
+    }
+
     public static void main(String[] args) {
-        MyComparator myComparator1 = (a, b) -> { return a > b; };
 
-        MyComparator myComparator2 = (a, b) -> a > b;
+        MyOperation addition = (a, b) -> a + b;
 
-        System.out.println(myComparator1.compare(4, 3));
-        System.out.println(myComparator2.compare(4, 3));
-        System.out.println(myComparator1.compare(6, 9));
+        System.out.println("Result addition: " + myFunc(10, 2, addition));
+        MyOperation substraction = (a, b) -> a - b;
+
+        System.out.println("Result substraction: " + myFunc(34, 2, substraction));
+
+        //System.out.println(myComparator1.operation(4, 3));
+        //System.out.println(myComparator2.operation(4, 3));
+        //System.out.println(myComparator1.operation(6, 9));
 
         ArrayList<String> names = new ArrayList<>();
         names.add("Hugo");

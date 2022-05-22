@@ -1,7 +1,7 @@
 package at.ac.fhcampuswien.advanced.lambdas;
 
 @FunctionalInterface
-public interface MyComparator {
-    boolean compare(int a, int b);
+public interface MyOperation {
+    int operation(int a, int b);
 }
 
