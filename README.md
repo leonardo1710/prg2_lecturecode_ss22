@@ -28,7 +28,7 @@ Course repository for Programming 2 in Computer Science and Digital Communicatio
 
 [Lecture Examples](https://github.com/leonardo1710/prg2_lecturecode_ss22/tree/master/src/main/java/at/ac/fhcampuswien/advanced)
 
-[Exercise 3 - Solution]()
+[Exercise 3 - Solution](https://github.com/leonardo1710/prg2-exercise-3-solution)
 
 ## 4 Design Patterns and Threads
 ### Learning Objectives:
@@ -38,7 +38,9 @@ Course repository for Programming 2 in Computer Science and Digital Communicatio
 - Thread Lifecycle and threading use cases
 - Hands on examples
 
-[Lecture Examples]()
+[Lecture Examples (Design Patterns)](https://github.com/leonardo1710/prg2_lecturecode_ss22/tree/master/src/main/java/at/ac/fhcampuswien/designpatterns)
 
-[Exercise 4 - Solution]()
+[Lecture Examples (Threads)](https://github.com/leonardo1710/prg2_lecturecode_ss22/tree/master/src/main/java/at/ac/fhcampuswien/threads)
+
+[Exercise 4 - Solution](https://github.com/leonardo1710/prg2-exercise-4-solution)
 
